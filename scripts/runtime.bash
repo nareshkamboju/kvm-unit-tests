@@ -2,9 +2,9 @@
 : ${MAX_SMP:=$(getconf _NPROCESSORS_CONF)}
 : ${TIMEOUT:=90s}
 
-PASS() { echo -ne "\e[32mPASS\e[0m"; }
-SKIP() { echo -ne "\e[33mSKIP\e[0m"; }
-FAIL() { echo -ne "\e[31mFAIL\e[0m"; }
+PASS() { echo -ne "PASS"; }
+SKIP() { echo -ne "SKIP"; }
+FAIL() { echo -ne "FAIL"; }
 
 extract_summary()
 {
